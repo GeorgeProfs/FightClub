@@ -20,7 +20,7 @@ public class Main {
 
 
         while (p1.healthPoints > 0 | p2.healthPoints > 0) {
-            while (turnDone) {
+            while (turnDone & p1.healthPoints > 0 & p1.healthPoints != 0) {
                 switch (choice) {
                     case "Fire": {
                         if (p1.manaPoints > 0 & turnDone) {
@@ -40,7 +40,7 @@ public class Main {
                     }
                 }
             }
-            while (!turnDone) {
+            while (!turnDone & p2.healthPoints > 0 & p2.healthPoints != 0) {
                 switch (choice) {
                     case "Fire": {
                         if (p2.manaPoints > 0 & !turnDone) {
