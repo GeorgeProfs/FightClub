@@ -6,5 +6,5 @@ package profs_13;
 public interface Status {
     void PreFightStatus();
     void HealthStatus();
-    void ManaStatus();
+    int ManaStatus();
 }
